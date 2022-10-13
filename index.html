@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="pt-br">
+    
+    <head>
+        <title>Shopourtime · Inicio</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/css/estilos.css">
+        <link rel="stylesheet" href="/js/index.js">
+    </head>
+
+    <body>
+        <div class="d-flex flex-column wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom shadow-sm mb-3"">
+                <div class="container">
+                  <a class="navbar-brand" href="/">Ourtime</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto flex-grow-1 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contato.html">Contato</a>
+                      </li>
+                      
+                    </ul>
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="/login.html" class="nav-link text-white">Login</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="/cadastro.html" class="nav-link text-white">Cadastrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
+                                 title="4 Produto(s) no carrinho"><small>4</small></span>
+                                <a href="/carrinho.html" class="nav-link text-white">
+                                    <i class="bi-cart" style="font-size: 24px; line-height: 24px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+              <div class="container">
+                <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active slide" data-bs-interval="3000">
+                            <img src="https://cdn.discordapp.com/attachments/1006381011539603516/1026700592195837952/smarwatch.png" class="d-none d-md-block w-100" style="border-radius: 20px;" alt="">
+                            <img src="img/banner-slider/deizoom-banner1-mobile.png" class="d-block d-md-none  w-100" alt="">
+                        </div>
+                        <div class="carousel-item slide" data-bs-interval="3000">
+                            <img src="https://cdn.discordapp.com/attachments/1006381011539603516/1026700592195837952/smarwatch.png" class="d-none d-md-block w-100" style="border-radius: 20px;" alt="">
+                            <img src="img/banner-slider/deizoom-banner1-mobile.png" class="d-block d-md-none  w-100" alt="">
+                        </div>
+                        <div class="carousel-item slide" data-bs-interval="3000"> 
+                            <img src="https://cdn.discordapp.com/attachments/1006381011539603516/1026700592195837952/smarwatch.png" class="d-none d-md-block w-100" style="border-radius: 20px;" alt="">
+                            <img src="img/banner-slider/deizoom-banner1-mobile.png" class="d-block d-md-none  w-100" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+                <hr class="mt-3">
+            </div>
+              
+              <main class="flex-fill">
+                <div class="container">
+                   <div class="row">
+                     <div class="col-12 col-md-5">
+                        <form class="justify-content-center justify-content-center-md-start mb-3
+                            mb-md-0">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" 
+                                placeholder="Digite aqui o que procura" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-dark" type="button" id="button-addon2">Buscar</button>
+                              </div>
+                        </form>
+                     </div>
+                     <div class="col-12 col-md-7">
+                        <div class="d-flex flex-row-reverse justify-content-center 
+                            justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordernar pelo nome</option>
+                                    <option>Ordernar pelo menor preço</option>
+                                    <option>Ordernar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3" style="position: relative; cursor: pointer;">
+                                <ul class="pagination pagination-sm my-0">
+                                  <li class="page-item active" aria-current="page">
+                                    <span class="page-link bg-dark border-dark">1</span>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#" style="color: black;">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#" style="color: black;">3</a></li>
+                                </ul>
+                              </nav>
+                        </div>
+                     </div>
+                   </div>   
+
+                   <hr mt-3>
+
+                   <div class="row g-3" style="align-items: center; justify-content: center;">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/mouse-razer-viper-mini-rgb-629ba0751dcfd-large.webp" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/iphone-13-pro-max-produto-700x700.webp" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/monitor_gamer_acer_nitro_23_6_led_curvo_165_hz_full_hd_1ms_freesync_premium_ei242qr_6067_1_09751db59a225482e3f46f07bc84609a.webp" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/1.png" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/H8a62864a2caa46c4a17f63120dd8b0dbB.png" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/H96feaec1ec5e452dab64a260067a9b27B-(1).png" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/S51613861bb9c420ab5b9382d65b77481H.png" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/mouse-razer-viper-mini-rgb-629ba0751dcfd-large.webp" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-5" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/mouse-razer-viper-mini-rgb-629ba0751dcfd-large.webp" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-5" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/mouse-razer-viper-mini-rgb-629ba0751dcfd-large.webp" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-5" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/mouse-razer-viper-mini-rgb-629ba0751dcfd-large.webp" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-5" style="width: 280px;">
+                            <div class="card bg-transparent">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px;
+                                        line-height: 24px; color: black;"></i>
+                                </a>
+                                <img src="img/produtos/mouse-razer-viper-mini-rgb-629ba0751dcfd-large.webp" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title m-0">Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI - RZ01-03250100-R3M1</h5>
+                                  <span class="m-0"style="color: gray;"><s>R$ 329,90</s></span>
+                                  <h5 class="card-title m-0" style="color: rgb(38, 196, 78); font-size: 30px; font-weight: 700;">R$ 190,99</h5>
+                                  <p class="card-text mb-3" style="color: rgb(78, 78, 78);">À vista no PIX</p>
+                                  <a href="#" class="btn btn-dark bg-gradient">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                   </div>
+                </div>
+              </main>
+
+            <div class="text-muted mb-5">
+              <div class="container">
+                <div class="row py-3">
+                  <h2 class="Perguntas mb-3" style="text-align: center; color: black; font-size: 25px;">
+                    Perguntas frequentes
+                    <p style="font-size: 15px; color: gray; margin-top: 5px;">Aqui vai algumas perguntas frequentes</p>
+                  </h2>
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+            <footer class="border-top text-muted bg-black">
+                <div class="container">
+                    <div class="row py-3">
+                        <div class="col-12 col-md-4 text-center text-light">
+                            &copy; 2022 - Shopourtime Online Ltda ME<br>
+                            Rua Virtual Inexistente, 171, São Paulo - SP<br>
+                            CNPJ 99.999.999/0001-99 
+                        </div>
+                        <div class="col-12 col-md-4 text-center">
+                            <a href="/politica.html" class="text-decoration-none text-light">
+                                Politica e Privacidade<br> 
+                            </a>
+                            <a href="/termos.html" class="text-decoration-none text-light">
+                                Termos de Uso<br>
+                            </a>
+                            <a href="/quemsomos.html" class="text-decoration-none text-light">
+                                Quem Somos<br> 
+                            </a>
+                            <a href="/trocas.html" class="text-decoration-none text-light">
+                                Trocas e Devoluções<br>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 text-center">
+                            <a href="/contato.html" class="text-decoration-none text-light">
+                                Contato pelo Site  
+                            </a><br>
+                            E-mail: <a href="mailto:shopourtime@contato.com" class="text-decoration-none text-light">
+                                shopourtime@contato.com
+                            </a><br>
+                            Telefone: <a href="phone:9999999999" class="text-decoration-none text-light">
+                                (99) 9999-9999
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    min-width: 372px;
+}
+body::-webkit-scrollbar {
+    width: 7px;}
+
+body::-webkit-scrollbar-track {
+    background: rgb(22, 22, 22);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 66);
+    border-radius: 20px;
+}
+.wrapper {
+    min-height: 100vh;
+}
